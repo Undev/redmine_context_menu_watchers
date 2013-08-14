@@ -1,0 +1,34 @@
+<% form_tag({:action => 'manage_watchers_bulk'}, :multipart => true   ) do %>
+    <%= hidden_field_tag 'back_url', params[:back_url] %>
+	<% @issues.each do |issue| %>
+		<%= hidden_field_tag 'issues[]', issue.id.to_s %>
+	<% end %>
+	<%= hidden_field_tag('unwatch',1) unless params[:unwatch].blank? %>
+	<fieldset class="box"><legend><%= params[:unwatch].blank? ? l(:permission_add_issue_watchers) : l(:permission_delete_issue_watchers)%></legend>
+		<div class="tabular">
+			<div class="box">
+			<p>
+				<label><%= l(:label_issue_watchers) %></label>
+				<% @project.users.sort.each do |user| -%>
+					<label class="floating"><%= check_box_tag 'watcher_user_ids[]', user.id, @users.include?(user) %> <%=h user %></label>
+				<% end -%>
+			</p>
+			</div>
+		</div>
+
+		<% groups = @project.member_principals.find(:all, :include => [:roles, :principal]).sort.select { |m| true if m.principal.class.name == 'Group' } %>
+		<% if groups && groups.size > 0 %>
+			<div class="tabular">
+				<div class="box">
+				<p>
+					<label><%= "#{l(:label_issue_watchers)} (#{l(:label_group_plural)})" %></label>
+					<% groups.each do |group| -%>
+						<label class="floating"><%= check_box_tag 'watcher_group_ids[]', group.principal.id, false %> <%=h group.principal %></label>
+					<% end -%>
+				</p>
+				</div>
+			</div>
+		<% end %>
+	</fieldset>
+	<%= submit_tag l(:button_apply) %>
+<% end %>
