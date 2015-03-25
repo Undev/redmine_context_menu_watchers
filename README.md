@@ -39,10 +39,10 @@ The plugin extends the issue context menu with several watchers-related items th
 
 * **Watch** - adds the current user as a watcher of the selected issues
 * **Unwatch** - removes the current user from the list of watchers of the selected issues
-* **Add watchers* - allows you to select project members to be added as watchers of the selected issues
+* **Add watchers** - allows you to select project members to be added as watchers of the selected issues
 * **Delete watchers** - allows you to select project members to be removed from the list of watchers of the selected issues.
 
-All the issues selected for the **Add watchers** / **Delete watchers** batch operations must belong to the same project. The **Add watchers** / **Delete watchers** item opens a new Redmine page where all project members are listed:  
+All the issues selected for the **Add watchers** / **Delete watchers** batch operations must belong to the same project. Clicking **Add watchers** or **Delete watchers** opens a new Redmine page where all project members are listed:  
 ![watchers to add](watchers_context_menu_2.PNG)
 
 To be able to add or delete watchers, you should have the appropriate watchers-related permissions enabled in the **Issue tracking* section:  
