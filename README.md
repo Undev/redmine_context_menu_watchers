@@ -45,7 +45,7 @@ The plugin extends the issue context menu with several watchers-related items th
 All the issues selected for the **Add watchers** / **Delete watchers** batch operations must belong to the same project. Clicking **Add watchers** or **Delete watchers** opens a new Redmine page where all project members are listed:  
 ![watchers to add](watchers_context_menu_2.PNG)
 
-To be able to add or delete watchers, you should have the appropriate watchers-related permissions enabled in the **Issue tracking* section:  
+To be able to add or delete watchers, you should have the appropriate watchers-related permissions:  
 ![watchers permissions](watchers_context_menu_3.PNG)
 
 ## License
