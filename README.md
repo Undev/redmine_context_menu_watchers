@@ -9,7 +9,7 @@ The initial author of the plugin is [Vitaly Klimov](mailto:vitaly.klimov@snowbir
 
 ## Compatibility
 
-This plugin version is compatible only with Redmine 1.3.0 and later.
+This plugin version is compatible with Redmine 1.3.0 and later.
 
 ## Installation
 
