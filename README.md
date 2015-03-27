@@ -1,4 +1,4 @@
-Redmine Watchers Context Menu Plugin 
+# Redmine Watchers Context Menu Plugin 
 
 [![Build Status](https://travis-ci.org/Undev/redmine_context_menu_watchers.png)](https://travis-ci.org/Undev/rredmine_context_menu_watchers)
 [![Code Climate](https://codeclimate.com/github/Undev/redmine_context_menu_watchers.png)](https://codeclimate.com/github/Undev/redmine_context_menu_watchers)
