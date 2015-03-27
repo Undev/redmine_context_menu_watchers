@@ -3,7 +3,7 @@ Redmine Watchers Context Menu Plugin
 [![Build Status](https://travis-ci.org/Undev/redmine_context_menu_watchers.png)](https://travis-ci.org/Undev/rredmine_context_menu_watchers)
 [![Code Climate](https://codeclimate.com/github/Undev/redmine_context_menu_watchers.png)](https://codeclimate.com/github/Undev/redmine_context_menu_watchers)
 
-This plugin adds watchers-related items to the issue context menu in Redmine.
+This plugin enables you to perform watchers-related batch operations in Redmine.
 
 The initial author of the plugin is [Vitaly Klimov](mailto:vitaly.klimov@snowbirdgames.com).
 
@@ -37,9 +37,7 @@ Now you should be able to see the plugin in **Administration > Plugins**.
 The plugin extends the issue context menu with several watchers-related items that allow you to perform batch operations on the selected issues:  
 ![watchers context menu](watchers_context_menu_1.PNG)
 
-* **Watch** - adds the current user as a watcher of the selected issues
-* **Unwatch** - removes the current user from the list of watchers of the selected issues
-* **Add watchers** - allows you to select project members to be added as watchers of the selected issues
+* **Add watchers** - allows you to select project members to be added as watchers of the selected issues.
 * **Delete watchers** - allows you to select project members to be removed from the list of watchers of the selected issues.
 
 All the issues selected for the **Add watchers** / **Delete watchers** batch operations must belong to the same project. Clicking **Add watchers** or **Delete watchers** opens a new Redmine page where all project members are listed:  
