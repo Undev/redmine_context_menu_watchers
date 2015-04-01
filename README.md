@@ -46,5 +46,3 @@ All the issues selected for the **Add watchers** / **Delete watchers** batch ope
 To be able to add or delete watchers, you should have the appropriate watchers-related permissions:  
 ![watchers permissions](watchers_context_menu_3.PNG)
 
-## License
-
