@@ -1,11 +1,6 @@
 # Redmine Watchers Context Menu Plugin 
 
-[![Build Status](https://travis-ci.org/Undev/redmine_context_menu_watchers.png)](https://travis-ci.org/Undev/rredmine_context_menu_watchers)
-[![Code Climate](https://codeclimate.com/github/Undev/redmine_context_menu_watchers.png)](https://codeclimate.com/github/Undev/redmine_context_menu_watchers)
-
 This plugin enables you to perform watchers-related batch operations in Redmine.
-
-The initial author of the plugin is [Vitaly Klimov](mailto:vitaly.klimov@snowbirdgames.com).
 
 ## Compatibility
 
@@ -27,8 +22,13 @@ This plugin version is compatible with Redmine 1.3.0 and later.
       Copy the plugin from GitHub using the following commands:
       
             git clone https://github.com/Undev/redmine_context_menu_watchers.git plugins/redmine_context_menu_watchers
+
+2. Update the Gemfile.lock file by running the following commands:  
+
+         rm Gemfile.lock  
+         bundle install
             
-2. Restart Redmine.
+3. Restart Redmine.
 
 Now you should be able to see the plugin in **Administration > Plugins**.
 
